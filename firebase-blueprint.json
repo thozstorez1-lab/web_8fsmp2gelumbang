@@ -1,0 +1,247 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile in 8F Web Class",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "username": { "type": "string", "maxLength": 50 },
+        "email": { "type": "string", "maxLength": 120 },
+        "photoURL": { "type": "string", "maxLength": 500 },
+        "role": { "type": "string", "enum": ["super_admin", "admin", "anggota"] },
+        "status": { "type": "string", "enum": ["active", "pending", "suspended"] },
+        "bio": { "type": "string", "maxLength": 300 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "displayName", "email", "role", "status"]
+    },
+    "Announcement": {
+      "title": "Announcement",
+      "description": "Class announcements",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "content": { "type": "string", "maxLength": 5000 },
+        "authorId": { "type": "string", "maxLength": 128 },
+        "authorName": { "type": "string", "maxLength": 100 },
+        "isImportant": { "type": "boolean" },
+        "imageUrl": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "content", "authorId", "authorName"]
+    },
+    "GlobalMessage": {
+      "title": "GlobalMessage",
+      "description": "Public chat message for class 8F",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "senderId": { "type": "string", "maxLength": 128 },
+        "senderName": { "type": "string", "maxLength": 100 },
+        "senderPhoto": { "type": "string", "maxLength": 500 },
+        "text": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "string" },
+        "reactions": { "type": "object" },
+        "replyTo": { "type": "object" }
+      },
+      "required": ["id", "senderId", "senderName", "text"]
+    },
+    "Assignment": {
+      "title": "Assignment",
+      "description": "School homework or class assignment",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "subject": { "type": "string", "maxLength": 80 },
+        "description": { "type": "string", "maxLength": 3000 },
+        "dueDate": { "type": "string", "maxLength": 50 },
+        "assignedDate": { "type": "string", "maxLength": 50 },
+        "authorId": { "type": "string", "maxLength": 128 },
+        "completedBy": { "type": "array" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "subject", "dueDate", "authorId"]
+    },
+    "ClassSchedule": {
+      "title": "ClassSchedule",
+      "description": "Weekly subjects and timetable",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "day": { "type": "string", "enum": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"] },
+        "subject": { "type": "string", "maxLength": 100 },
+        "time": { "type": "string", "maxLength": 50 },
+        "room": { "type": "string", "maxLength": 50 },
+        "notes": { "type": "string", "maxLength": 200 }
+      },
+      "required": ["id", "day", "subject", "time"]
+    },
+    "DutySchedule": {
+      "title": "DutySchedule",
+      "description": "Weekly classroom duty (piket)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "day": { "type": "string", "enum": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"] },
+        "members": { "type": "array" },
+        "tasks": { "type": "string", "maxLength": 250 }
+      },
+      "required": ["id", "day", "members"]
+    },
+    "CalendarEvent": {
+      "title": "CalendarEvent",
+      "description": "Calendar events for class 8F",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "date": { "type": "string", "maxLength": 50 },
+        "category": { "type": "string", "enum": ["Ujian", "Tugas", "Kegiatan", "Acara Sekolah", "Hari Penting"] },
+        "description": { "type": "string", "maxLength": 1000 },
+        "authorId": { "type": "string", "maxLength": 128 }
+      },
+      "required": ["id", "title", "date", "category"]
+    },
+    "ClassRule": {
+      "title": "ClassRule",
+      "description": "Class 8F guidelines and rules",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "category": { "type": "string", "maxLength": 80 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "order": { "type": "number" }
+      },
+      "required": ["id", "title", "category", "description"]
+    },
+    "MemoryItem": {
+      "title": "MemoryItem",
+      "description": "Class memory / gallery photo or video",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "category": { "type": "string", "maxLength": 80 },
+        "description": { "type": "string", "maxLength": 2000 },
+        "mediaType": { "type": "string", "enum": ["photo", "video"] },
+        "url": { "type": "string", "maxLength": 1000 },
+        "eventDate": { "type": "string", "maxLength": 50 },
+        "uploaderName": { "type": "string", "maxLength": 100 },
+        "uploaderId": { "type": "string", "maxLength": 128 },
+        "likes": { "type": "array" }
+      },
+      "required": ["id", "title", "mediaType", "url", "uploaderId"]
+    },
+    "Poll": {
+      "title": "Poll",
+      "description": "Class voting and polling",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "question": { "type": "string", "maxLength": 200 },
+        "options": { "type": "array" },
+        "authorId": { "type": "string", "maxLength": 128 },
+        "status": { "type": "string", "enum": ["active", "closed"] },
+        "votes": { "type": "object" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "question", "options", "status"]
+    },
+    "Suggestion": {
+      "title": "Suggestion",
+      "description": "Kotak saran for class feedback",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "senderId": { "type": "string", "maxLength": 128 },
+        "senderName": { "type": "string", "maxLength": 100 },
+        "category": { "type": "string", "maxLength": 80 },
+        "content": { "type": "string", "maxLength": 2000 },
+        "isAnonymous": { "type": "boolean" },
+        "status": { "type": "string", "enum": ["pending", "reviewed", "resolved"] },
+        "reply": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "content", "category", "status"]
+    },
+    "WebsiteSetting": {
+      "title": "WebsiteSetting",
+      "description": "Configuration for 8F Web Class",
+      "type": "object",
+      "properties": {
+        "siteName": { "type": "string", "maxLength": 100 },
+        "tagline": { "type": "string", "maxLength": 150 },
+        "creator": { "type": "string", "maxLength": 100 },
+        "homeroomTeacher": { "type": "string", "maxLength": 100 },
+        "homeroomTeacherBio": { "type": "string", "maxLength": 500 },
+        "homeroomTeacherPhoto": { "type": "string", "maxLength": 500 },
+        "themeName": { "type": "string", "maxLength": 50 },
+        "particleEffect": { "type": "boolean" },
+        "allowRegistration": { "type": "string", "enum": ["open", "pending", "code"] },
+        "inviteCode": { "type": "string", "maxLength": 50 },
+        "maintenanceMode": { "type": "boolean" }
+      },
+      "required": ["siteName", "tagline", "creator", "homeroomTeacher"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User accounts and roles"
+    },
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Authorized administrators list"
+    },
+    "/announcements/{announcementId}": {
+      "schema": { "$ref": "#/entities/Announcement" },
+      "description": "Class broadcast announcements"
+    },
+    "/globalMessages/{messageId}": {
+      "schema": { "$ref": "#/entities/GlobalMessage" },
+      "description": "Classroom public live discussion"
+    },
+    "/assignments/{assignmentId}": {
+      "schema": { "$ref": "#/entities/Assignment" },
+      "description": "Class homework and tasks"
+    },
+    "/schedules/{scheduleId}": {
+      "schema": { "$ref": "#/entities/ClassSchedule" },
+      "description": "Timetable of subjects"
+    },
+    "/dutySchedules/{dutyId}": {
+      "schema": { "$ref": "#/entities/DutySchedule" },
+      "description": "Piket cleaning schedule"
+    },
+    "/calendarEvents/{eventId}": {
+      "schema": { "$ref": "#/entities/CalendarEvent" },
+      "description": "School and class events"
+    },
+    "/classRules/{ruleId}": {
+      "schema": { "$ref": "#/entities/ClassRule" },
+      "description": "Classroom etiquette and rules"
+    },
+    "/memories/{memoryId}": {
+      "schema": { "$ref": "#/entities/MemoryItem" },
+      "description": "Photos and videos gallery"
+    },
+    "/polls/{pollId}": {
+      "schema": { "$ref": "#/entities/Poll" },
+      "description": "Classroom vote questions"
+    },
+    "/suggestions/{suggestionId}": {
+      "schema": { "$ref": "#/entities/Suggestion" },
+      "description": "Feedback and suggestions box"
+    },
+    "/websiteSettings/{settingId}": {
+      "schema": { "$ref": "#/entities/WebsiteSetting" },
+      "description": "Theme, logo, and app settings"
+    }
+  }
+}

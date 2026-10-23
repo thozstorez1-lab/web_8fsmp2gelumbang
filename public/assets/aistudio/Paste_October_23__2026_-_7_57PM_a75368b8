@@ -1,0 +1,1230 @@
+🚀 PROJECT WEBSITE FULL-STACK: 8F WEB CLASS — GALAXY PREMIUM
+
+PERAN AI
+
+Bertindaklah sebagai Senior Full-Stack Developer, UI/UX Designer, Database Architect, Security Engineer, dan Software Tester profesional.
+
+Bangun sebuah website bernama 8F WEB CLASS yang modern, futuristik, premium, interaktif, responsif, aman, dan benar-benar berfungsi.
+
+Website ini dibuat sebagai pusat informasi, komunikasi, dokumentasi, dan kebersamaan kelas 8F.
+
+PENTING:
+Jangan hanya membuat desain frontend atau prototype dengan tombol palsu. Bangun aplikasi yang dapat digunakan sungguhan, memiliki database, autentikasi, penyimpanan file, otorisasi pengguna, serta sinkronisasi real-time antarpengguna dan antarperangkat.
+
+Jangan berhenti pada rancangan atau contoh kode. Implementasikan aplikasi secara bertahap, jalankan pemeriksaan, perbaiki error, dan berikan petunjuk konfigurasi sampai website siap diuji dan dipublikasikan.
+
+Jika membutuhkan layanan eksternal seperti Firebase, jelaskan konfigurasi yang harus dilakukan. Jangan mengarang bahwa layanan sudah terhubung jika belum.
+
+---
+
+1. IDENTITAS WEBSITE
+
+Nama website: 8F WEB CLASS
+
+Tema: GALAXY PREMIUM
+
+Tagline utama:
+
+“ONE CLASS, ONE FAMILY, ONE FUTURE.”
+
+Identitas pembuat:
+
+CREATED BY THOZ — WAKLENG
+
+Identitas wali kelas:
+
+WALI KELAS: BUK BIBA
+
+Tahun footer: gunakan tahun berjalan secara otomatis.
+
+Tujuan website:
+
+- Menjadi pusat informasi kelas 8F.
+- Menyediakan komunikasi antaranggota.
+- Menyimpan kenangan kelas.
+- Menyediakan informasi tugas dan jadwal.
+- Menampilkan pengumuman kelas.
+- Mempermudah pengelolaan informasi kelas.
+- Membangun ruang digital yang kreatif, tertib, dan nyaman.
+
+---
+
+2. DESAIN VISUAL GALAXY PREMIUM
+
+Buat desain yang memiliki kualitas visual seperti aplikasi web premium modern.
+
+Warna utama
+
+- Hitam luar angkasa.
+- Ungu neon.
+- Violet.
+- Biru elektrik.
+- Putih untuk teks utama.
+- Warna tambahan yang dapat dikustomisasi oleh admin.
+
+Efek visual
+
+- Background galaksi.
+- Bintang bergerak perlahan.
+- Nebula dengan gradasi ungu.
+- Partikel bercahaya.
+- Glassmorphism.
+- Neon glow.
+- Gradient border.
+- Hover animation.
+- Smooth scrolling.
+- Transisi ant halaman.
+- Animasi loading.
+- Efek parallax ringan.
+- Animasi kartu ketika muncul.
+- Tombol dengan efek cahaya.
+- Modal dengan animasi.
+- Notifikasi toast modern.
+
+Animasi harus halus dan tidak mengganggu kenyamanan membaca.
+
+Hormati pengaturan perangkat "prefers-reduced-motion" untuk pengguna yang mengurangi animasi.
+
+Responsivitas
+
+Website harus berjalan dengan baik di:
+
+- Android.
+- iPhone.
+- Tablet.
+- Laptop.
+- Desktop.
+
+Gunakan pendekatan mobile-first.
+
+Pastikan:
+
+- Tidak ada elemen terpotong.
+- Tidak ada scroll horizontal yang tidak diperlukan.
+- Tombol mudah ditekan.
+- Formulir mudah digunakan.
+- Teks tetap terbaca.
+- Gambar menyesuaikan ukuran layar.
+- Navigasi mobile praktis.
+- Performa tetap baik di HP dengan spesifikasi sederhana.
+
+---
+
+3. TEKNOLOGI YANG DIGUNAKAN
+
+Gunakan stack modern yang stabil dan sesuai dengan kemampuan lingkungan Google AI Studio.
+
+Rekomendasi:
+
+- Frontend: React dan TypeScript.
+- Styling: CSS modern atau Tailwind CSS.
+- Backend: Firebase.
+- Authentication: Firebase Authentication.
+- Database: Cloud Firestore.
+- Penyimpanan media: Firebase Storage.
+- Hosting: Firebase Hosting atau Firebase App Hosting sesuai kebutuhan.
+- Validasi: validasi frontend dan backend.
+- Pengujian: pemeriksaan TypeScript, build, serta pengujian fitur utama.
+
+Jika lingkungan AI Studio memiliki integrasi backend atau layanan berbeda yang lebih sesuai, pilih solusi yang benar-benar dapat dijalankan dan dokumentasikan alasannya.
+
+Jangan mencampurkan beberapa teknologi backend yang tidak diperlukan.
+
+Buat struktur proyek yang rapi, modular, mudah dikembangkan, dan mudah dirawat.
+
+Pisahkan:
+
+- Komponen UI.
+- Halaman.
+- Layanan autentikasi.
+- Layanan database.
+- Layanan penyimpanan.
+- Logika izin pengguna.
+- Validasi.
+- Pengaturan aplikasi.
+- Styles.
+- Pengujian.
+
+Jangan meletakkan seluruh aplikasi dalam satu file besar.
+
+---
+
+4. HALAMAN PEMBUKA
+
+Buat landing page dengan tampilan premium.
+
+Elemen:
+
+1. Loading screen bertema galaxy.
+2. Logo animasi 8F.
+3. Tulisan “WELCOME TO 8F WEB CLASS”.
+4. Tagline “ONE CLASS, ONE FAMILY, ONE FUTURE.”
+5. Tombol “MASUK KE WEBSITE”.
+6. Informasi singkat tentang kelas.
+7. Kartu wali kelas.
+8. Identitas pembuat website.
+9. Pengumuman terbaru.
+10. Footer.
+
+Gunakan background galaksi sebagai tampilan default.
+
+Jika foto kelas belum tersedia, gunakan ilustrasi atau placeholder yang sesuai.
+
+Jangan mengambil foto pribadi orang secara sembarangan.
+
+Tombol masuk harus benar-benar membuka halaman utama atau mengarahkan pengguna ke autentikasi jika diperlukan.
+
+---
+
+5. NAVIGASI UTAMA
+
+Buat sidebar untuk desktop dan navigasi yang praktis untuk perangkat mobile.
+
+Sediakan menu tiga titik (⋮) dengan animasi.
+
+Menu berisi:
+
+1. Beranda.
+2. Dashboard.
+3. Profil Saya.
+4. Anggota Kelas.
+5. Chat Global.
+6. Chat Pribadi.
+7. Kenangan Kelas.
+8. Galeri Foto.
+9. Galeri Video.
+10. Pengumuman.
+11. Tugas dan PR.
+12. Jadwal Pelajaran.
+13. Jadwal Piket.
+14. Kalender Kelas.
+15. Polling Kelas.
+16. Kotak Saran.
+17. Peraturan Kelas.
+18. Pencapaian Kelas.
+19. Tentang Website.
+20. Notifikasi.
+21. Pengaturan.
+22. Dashboard Admin.
+23. Logout.
+
+Dashboard Admin hanya boleh terlihat dan dapat dibuka oleh pengguna yang memiliki hak akses admin.
+
+Menyembunyikan menu admin bukanlah mekanisme keamanan utama. Setiap operasi sensitif harus tetap divalidasi oleh backend atau aturan keamanan database.
+
+---
+
+6. SISTEM AKUN
+
+Buat autentikasi sungguhan.
+
+Fitur:
+
+- Registrasi.
+- Login.
+- Logout.
+- Verifikasi email jika diaktifkan.
+- Lupa password.
+- Reset password.
+- Username.
+- Nama tampilan.
+- Foto profil.
+- Bio.
+- Pengaturan privasi.
+- Pengaturan notifikasi.
+- Status akun.
+- Pengelolaan sesi.
+- Validasi input.
+- Pesan error yang jelas.
+- Tampilan loading saat proses autentikasi.
+
+Gunakan Firebase Authentication atau solusi setara.
+
+Jangan membuat tombol login yang hanya mengubah tampilan tanpa memverifikasi pengguna.
+
+Pengaturan pendaftaran
+
+Admin dapat memilih:
+
+- Pendaftaran terbuka.
+- Pendaftaran memerlukan persetujuan.
+- Pendaftaran melalui kode undangan.
+
+Sediakan:
+
+- Daftar permintaan pendaftaran.
+- Persetujuan akun.
+- Penolakan akun.
+- Penonaktifan akun sesuai kebijakan.
+- Pengelolaan undangan.
+
+Jangan mengizinkan siapa pun menjadi admin hanya dengan memilih username tertentu.
+
+---
+
+7. SISTEM ROLE DAN ADMIN
+
+Gunakan tiga tingkat akses:
+
+1. SUPER ADMIN.
+2. ADMIN.
+3. ANGGOTA.
+
+Sediakan konfigurasi awal untuk menetapkan dua admin utama yang dipercaya pengelola website.
+
+Jangan menanam password admin di frontend atau source code publik.
+
+Gunakan autentikasi dan mekanisme otorisasi backend yang aman.
+
+SUPER ADMIN
+
+Super Admin dapat:
+
+- Mengelola admin.
+- Menambahkan atau mencabut hak akses admin.
+- Mengelola anggota.
+- Mengatur pendaftaran.
+- Mengatur tema website.
+- Mengubah logo dan background.
+- Mengelola konten.
+- Mengatur fitur.
+- Mengelola laporan.
+- Mengatur izin pengguna.
+- Melihat log tindakan admin.
+- Mengaktifkan mode pemeliharaan.
+
+ADMIN
+
+Admin dapat:
+
+- Mengelola pengumuman.
+- Mengelola tugas.
+- Mengelola jadwal.
+- Mengelola galeri.
+- Mengelola album kenangan.
+- Memoderasi chat sesuai kebijakan.
+- Mengelola laporan.
+- Menyetujui anggota jika diberi izin.
+- Mengelola informasi kelas.
+
+Izin admin harus dapat diatur secara terperinci.
+
+Admin biasa tidak otomatis mendapatkan seluruh hak Super Admin.
+
+Keamanan admin
+
+Wajib:
+
+- Validasi role di backend.
+- Gunakan Firestore Security Rules.
+- Gunakan Firebase Admin SDK hanya di lingkungan server tepercaya.
+- Jangan menyimpan password admin di localStorage.
+- Jangan menyimpan password admin dalam JavaScript publik.
+- Jangan memberikan role berdasarkan input pengguna.
+- Jangan mengandalkan proteksi halaman frontend.
+- Catat aktivitas sensitif.
+- Batasi akses ke data pribadi.
+- Sediakan proses pemulihan akses admin yang aman.
+
+Jika dua admin utama harus ditetapkan, dokumentasikan cara mengatur kedua akun tersebut melalui konfigurasi tepercaya atau proses administrasi yang aman.
+
+---
+
+8. DASHBOARD UTAMA
+
+Buat dashboard yang menampilkan:
+
+- Sapaan personal.
+- Tanggal dan waktu.
+- Jumlah anggota terdaftar.
+- Pengumuman terbaru.
+- Jadwal pelajaran hari ini.
+- Tugas mendatang.
+- Kalender kegiatan.
+- Chat terbaru.
+- Kenangan terbaru.
+- Notifikasi.
+- Aktivitas kelas yang boleh ditampilkan.
+- Status layanan jika relevan.
+
+Tambahkan kartu statistik dengan animasi ringan.
+
+Data harus berasal dari database.
+
+Jika data belum tersedia, tampilkan empty state yang menarik, bukan data palsu yang terlihat seperti data sungguhan.
+
+---
+
+9. CHAT GLOBAL REAL-TIME
+
+Buat ruang chat global untuk seluruh anggota kelas.
+
+Fitur:
+
+- Pesan real-time.
+- Nama pengirim.
+- Foto profil.
+- Waktu pengiriman.
+- Balasan pesan.
+- Reaksi emoji.
+- Berbagi gambar jika diaktifkan.
+- Notifikasi pesan baru.
+- Laporan pesan.
+- Penghapusan pesan sesuai izin.
+- Moderasi admin.
+- Pemuatan pesan bertahap.
+- Penanganan koneksi terputus.
+- Indikator pengiriman pesan.
+- Batas panjang pesan.
+- Perlindungan dari spam.
+
+Gunakan Firestore listeners atau mekanisme real-time setara.
+
+Jangan menggunakan localStorage sebagai database chat bersama.
+
+Pesan harus tersinkron di perangkat berbeda.
+
+Jangan menampilkan email, password, atau data sensitif anggota di ruang chat.
+
+---
+
+10. CHAT PRIBADI
+
+Buat sistem percakapan pribadi antaranggota.
+
+Fitur:
+
+- Membuat percakapan.
+- Daftar percakapan.
+- Pesan real-time.
+- Waktu pengiriman.
+- Indikator pesan terbaca jika diaktifkan.
+- Notifikasi.
+- Blokir pengguna.
+- Laporkan penyalahgunaan.
+- Pengaturan siapa yang dapat mengirim pesan.
+- Penghapusan percakapan sesuai kebijakan.
+
+Keamanan:
+
+- Hanya peserta percakapan yang dapat membaca pesan.
+- Validasi izin harus dilakukan pada database atau backend.
+- Pengguna tidak boleh dapat mengubah daftar peserta untuk memperoleh akses.
+- Admin tidak boleh otomatis dapat membaca semua percakapan pribadi.
+- Jika pesan dilaporkan, sediakan proses peninjauan terbatas pada laporan tersebut.
+- Jangan mengklaim enkripsi end-to-end kecuali benar-benar diimplementasikan dan diuji.
+
+---
+
+11. KENANGAN KELAS
+
+Buat halaman khusus untuk menyimpan momen kelas.
+
+Fitur:
+
+- Album foto.
+- Album video.
+- Judul album.
+- Deskripsi.
+- Tanggal kegiatan.
+- Kategori acara.
+- Nama pengunggah.
+- Komentar jika diaktifkan.
+- Reaksi emoji.
+- Tampilan grid.
+- Tampilan slideshow.
+- Preview media.
+- Pencarian.
+- Filter kategori.
+- Pengelolaan oleh admin.
+
+Gunakan Firebase Storage untuk media dan Firestore untuk metadata.
+
+Jangan menyimpan file video sebagai string base64 di database.
+
+Tambahkan validasi:
+
+- Jenis file.
+- Ukuran file.
+- Hak akses.
+- Status unggahan.
+- Penanganan kegagalan upload.
+
+Hormati privasi anggota kelas. Sediakan cara untuk melaporkan atau meminta penghapusan foto dan video yang diunggah tanpa izin.
+
+---
+
+12. GALERI FOTO DAN VIDEO
+
+Buat halaman galeri terpisah.
+
+Fitur:
+
+- Filter foto dan video.
+- Album berdasarkan acara.
+- Pencarian judul.
+- Pengurutan berdasarkan tanggal.
+- Thumbnail.
+- Preview ukuran besar.
+- Slideshow foto.
+- Pemutar video.
+- Loading bertahap.
+- Optimasi gambar.
+- Pengelolaan media melalui admin.
+
+Admin dapat menambah, mengedit keterangan, mengubah kategori, dan menghapus media sesuai izin.
+
+Jika media belum tersedia, tampilkan placeholder galaxy.
+
+---
+
+13. DASHBOARD ADMIN
+
+Buat dashboard admin yang profesional dengan sidebar tersendiri.
+
+Menu:
+
+1. Ringkasan.
+2. Anggota.
+3. Permintaan Akun.
+4. Hak Akses.
+5. Pengumuman.
+6. Chat dan Moderasi.
+7. Galeri.
+8. Kenangan.
+9. Tugas.
+10. Jadwal.
+11. Kalender.
+12. Polling.
+13. Kotak Saran.
+14. Tema Website.
+15. Logo dan Background.
+16. Identitas Website.
+17. Pengaturan Fitur.
+18. Laporan Pengguna.
+19. Log Aktivitas.
+20. Pengaturan Keamanan.
+
+Pengaturan tema
+
+Admin dapat:
+
+- Mengubah nama website.
+- Mengganti logo.
+- Mengganti background.
+- Mengunggah gambar.
+- Mengatur warna.
+- Mengubah font yang tersedia.
+- Mengaktifkan atau menonaktifkan animasi.
+- Mengatur efek partikel.
+- Mengubah teks sambutan.
+- Mengatur footer.
+- Memilih tema alternatif.
+
+Sediakan tombol:
+
+- Pratinjau.
+- Simpan Perubahan.
+- Batalkan.
+- Pulihkan Tema Default.
+
+Perubahan yang disimpan harus tersimpan di database atau konfigurasi yang sesuai dan terlihat pada perangkat lain.
+
+Jangan hanya mengubah tampilan lokal browser admin.
+
+Pengelolaan media
+
+Admin dapat:
+
+- Mengunggah foto.
+- Mengunggah video.
+- Mengubah judul.
+- Mengubah deskripsi.
+- Mengubah kategori.
+- Menghapus media.
+- Menampilkan atau menyembunyikan konten.
+- Mengelola laporan media.
+
+Pengaturan website
+
+Admin dapat:
+
+- Mengatur pendaftaran.
+- Mengatur kode undangan.
+- Mengatur batas unggahan.
+- Mengaktifkan fitur.
+- Mengatur pemeliharaan.
+- Melihat status koneksi.
+- Melihat log error yang tidak berisi rahasia.
+- Melihat log aktivitas pengelola.
+
+Semua operasi sensitif wajib divalidasi menggunakan otorisasi backend.
+
+---
+
+14. DASHBOARD TUGAS DAN PR
+
+Buat halaman tugas yang mudah digunakan.
+
+Setiap tugas memiliki:
+
+- Judul.
+- Mata pelajaran.
+- Deskripsi.
+- Tanggal diberikan.
+- Tenggat waktu.
+- Lampiran.
+- Status.
+- Catatan tambahan.
+
+Fitur:
+
+- Menambah tugas.
+- Mengedit tugas.
+- Menghapus tugas.
+- Filter mata pelajaran.
+- Filter tenggat.
+- Pencarian.
+- Penanda tugas mendekati tenggat.
+- Penanda tugas yang terlambat.
+- Notifikasi tugas baru.
+- Penandaan selesai oleh masing-masing anggota.
+
+Status tugas pribadi tidak boleh otomatis mengubah status tugas milik anggota lain.
+
+Jika fitur pengumpulan jawaban diaktifkan, atur izin agar hasil pribadi siswa tidak dapat dilihat semua orang tanpa alasan dan izin yang sesuai.
+
+---
+
+15. JADWAL PELAJARAN
+
+Buat jadwal mingguan.
+
+Informasi:
+
+- Hari.
+- Jam pelajaran.
+- Mata pelajaran.
+- Ruangan jika diperlukan.
+- Catatan perubahan jadwal.
+
+Fitur:
+
+- Tampilan tabel.
+- Tampilan kartu mobile.
+- Penanda hari ini.
+- Edit jadwal oleh admin.
+- Riwayat perubahan.
+- Sinkronisasi ke seluruh anggota.
+
+---
+
+16. JADWAL PIKET
+
+Buat jadwal piket kelas.
+
+Fitur:
+
+- Nama anggota.
+- Hari piket.
+- Daftar tugas kebersihan.
+- Catatan.
+- Riwayat perubahan jadwal.
+- Pengelolaan oleh admin.
+
+Jangan membuat fitur yang mempermalukan atau memberi peringkat negatif kepada siswa.
+
+---
+
+17. KALENDER KELAS
+
+Buat kalender interaktif.
+
+Jenis acara:
+
+- Ujian.
+- Tenggat tugas.
+- Kegiatan kelas.
+- Acara sekolah.
+- Hari penting.
+
+Fitur:
+
+- Tampilan bulanan.
+- Tampilan agenda.
+- Detail acara.
+- Pengingat dalam aplikasi.
+- Penambahan acara oleh admin.
+- Pengeditan acara.
+- Penghapusan acara.
+- Sinkronisasi real-time.
+
+Gunakan zona waktu yang sesuai dengan lokasi sekolah dan sediakan pengaturan jika diperlukan.
+
+---
+
+18. PENGUMUMAN
+
+Buat sistem pengumuman.
+
+Fitur:
+
+- Judul.
+- Isi.
+- Gambar opsional.
+- Tanggal publikasi.
+- Penanda penting.
+- Arsip.
+- Pencarian.
+- Filter.
+- Notifikasi dalam aplikasi.
+
+Admin dapat membuat, mengedit, memublikasikan, dan mengarsipkan pengumuman sesuai izin.
+
+Pengumuman harus tersimpan di database.
+
+---
+
+19. POLLING KELAS
+
+Buat sistem polling.
+
+Fitur:
+
+- Judul pertanyaan.
+- Pilihan jawaban.
+- Waktu mulai dan berakhir.
+- Hasil polling.
+- Pengaturan siapa yang boleh membuat polling.
+- Pembatasan suara sesuai identitas pengguna.
+- Perlindungan agar pengguna tidak dapat memanipulasi jumlah suara.
+
+Sediakan opsi polling anonim jika diaktifkan.
+
+Jangan menampilkan identitas pemilih dalam polling anonim.
+
+---
+
+20. KOTAK SARAN
+
+Buat fitur untuk mengirim saran kepada pengelola kelas.
+
+Fitur:
+
+- Formulir saran.
+- Kategori saran.
+- Status penanganan.
+- Balasan pengelola jika diaktifkan.
+- Pelaporan penyalahgunaan.
+
+Sediakan mode anonim hanya jika mekanisme privasinya benar-benar diterapkan.
+
+Jelaskan kepada pengguna apakah identitasnya disimpan atau tidak.
+
+---
+
+21. PERATURAN KELAS
+
+Buat halaman peraturan kelas dengan tampilan yang rapi.
+
+Fitur:
+
+- Daftar peraturan.
+- Kategori.
+- Deskripsi.
+- Tanggal pembaruan.
+- Pengelolaan oleh admin.
+- Tampilan yang nyaman di HP.
+
+Jangan membuat peraturan baru seolah-olah sudah resmi dari sekolah. Beri label bahwa isi harus disesuaikan dan disetujui oleh pihak yang berwenang.
+
+---
+
+22. PENCAPAIAN KELAS
+
+Buat halaman untuk mencatat pencapaian positif kelas.
+
+Contoh:
+
+- Kegiatan bersama.
+- Prestasi kelas.
+- Proyek kelompok.
+- Kegiatan sosial.
+- Momen kebersamaan.
+
+Gunakan kartu visual dengan animasi ringan.
+
+Hindari papan peringkat yang mempermalukan siswa atau membandingkan nilai pribadi tanpa persetujuan.
+
+---
+
+23. PROFIL ANGGOTA
+
+Setiap anggota memiliki profil.
+
+Fitur:
+
+- Nama tampilan.
+- Username.
+- Foto profil.
+- Bio opsional.
+- Preferensi privasi.
+- Pengaturan pesan pribadi.
+- Pengaturan status online.
+
+Jangan menampilkan informasi pribadi seperti alamat rumah, nomor telepon pribadi, password, atau data sensitif kepada semua anggota.
+
+Pengguna dapat memilih informasi profil yang ingin ditampilkan.
+
+---
+
+24. IDENTITAS PEMBUAT WEBSITE
+
+Tampilkan identitas pembuat website secara konsisten.
+
+Nama identitas:
+
+THOZ — WAKLENG
+
+Tulisan utama:
+
+“CREATED BY THOZ — WAKLENG”
+
+Tambahkan:
+
+- Kartu Website Creator.
+- Efek neon ungu.
+- Border futuristik.
+- Ikon kode atau komputer.
+- Animasi glow halus.
+- Halaman Tentang Website.
+- Footer dengan identitas pembuat.
+
+Pada halaman Tentang Website, gunakan teks:
+
+“8F WEB CLASS adalah website digital untuk mendukung komunikasi, informasi, dokumentasi, dan kebersamaan kelas 8F. Website ini dikembangkan oleh THOZ — WAKLENG dengan tema Galaxy Premium.”
+
+Jangan menambahkan gelar, penghargaan, atau klaim profesional yang belum diberikan.
+
+Identitas pembuat harus terlihat rapi tanpa mengganggu pengalaman pengguna.
+
+---
+
+25. IDENTITAS WALI KELAS
+
+Nama wali kelas:
+
+BUK BIBA
+
+Tampilkan kartu khusus di dashboard utama.
+
+Judul kartu:
+
+WALI KELAS 8F
+
+Isi:
+
+- Nama: BUK BIBA.
+- Peran: Wali Kelas 8F.
+- Foto profil jika tersedia.
+- Deskripsi opsional.
+
+Jika foto belum tersedia, gunakan avatar ilustrasi yang sopan.
+
+Admin dapat menambahkan foto dan deskripsi melalui dashboard.
+
+Jangan mengarang nomor telepon, alamat, gelar, atau informasi pribadi wali kelas.
+
+Sediakan pengaturan agar informasi tambahan hanya ditampilkan setelah mendapat izin yang sesuai.
+
+---
+
+26. FOOTER WEBSITE
+
+Gunakan footer berikut:
+
+© [TAHUN OTOMATIS] 8F WEB CLASS
+
+Created by THOZ — WAKLENG
+
+Wali Kelas: BUK BIBA
+
+ONE CLASS, ONE FAMILY, ONE FUTURE.
+
+Footer menggunakan:
+
+- Background gelap.
+- Border ungu.
+- Efek glow lembut.
+- Tipografi yang jelas.
+- Tata letak responsif.
+
+Pastikan footer tampil konsisten pada halaman yang sesuai.
+
+---
+
+27. NOTIFIKASI
+
+Buat pusat notifikasi.
+
+Jenis notifikasi:
+
+- Pengumuman baru.
+- Tugas baru.
+- Perubahan jadwal.
+- Pesan chat.
+- Undangan percakapan.
+- Pembaruan kalender.
+
+Fitur:
+
+- Daftar notifikasi.
+- Penanda sudah dibaca.
+- Penanda belum dibaca.
+- Tandai semua sebagai dibaca.
+- Pengaturan preferensi.
+
+Jangan mengirim notifikasi browser atau email tanpa izin pengguna yang diperlukan.
+
+---
+
+28. PENCARIAN GLOBAL
+
+Buat pencarian global yang dapat menemukan:
+
+- Pengumuman.
+- Tugas.
+- Jadwal.
+- Album kenangan.
+- Foto dan video.
+- Acara kalender.
+- Anggota berdasarkan nama tampilan yang dapat dicari.
+
+Hasil pencarian harus mengikuti izin akses pengguna.
+
+Jangan menampilkan hasil yang berasal dari percakapan pribadi atau konten terbatas kepada pengguna yang tidak berhak.
+
+---
+
+29. PENGATURAN PENGGUNA
+
+Sediakan halaman pengaturan dengan:
+
+- Edit profil.
+- Ganti foto profil.
+- Ubah bio.
+- Atur notifikasi.
+- Atur privasi.
+- Atur pesan pribadi.
+- Ubah preferensi tema jika tersedia.
+- Logout.
+- Hapus akun jika didukung dengan prosedur yang aman.
+
+Sediakan konfirmasi sebelum tindakan penting.
+
+Jangan meminta pengguna membagikan password kepada admin.
+
+---
+
+30. DATABASE DAN STRUKTUR DATA
+
+Rancang struktur database yang terorganisasi.
+
+Koleksi yang dapat digunakan:
+
+- users
+- announcements
+- globalMessages
+- conversations
+- privateMessages
+- albums
+- media
+- assignments
+- schedules
+- dutySchedules
+- calendarEvents
+- polls
+- pollVotes
+- suggestions
+- notifications
+- reports
+- websiteSettings
+- classRules
+- activityLogs
+- invitations
+
+Sesuaikan struktur akhir dengan kebutuhan aplikasi.
+
+Terapkan:
+
+- Validasi data.
+- Timestamp server.
+- Indeks yang diperlukan.
+- Pagination.
+- Aturan akses.
+- Penanganan data yang tidak valid.
+- Penghapusan atau retensi data yang sesuai.
+
+Hindari menyimpan data yang sama berkali-kali jika tidak diperlukan.
+
+Jangan menyimpan password dalam database buatan sendiri.
+
+---
+
+31. KEAMANAN
+
+Keamanan adalah persyaratan wajib.
+
+Terapkan:
+
+- Autentikasi yang benar.
+- Otorisasi berdasarkan role.
+- Firestore Security Rules.
+- Storage Security Rules.
+- Validasi input.
+- Pembatasan ukuran file.
+- Pembatasan jenis file.
+- Proteksi dari spam.
+- Pembatasan operasi berulang.
+- Penanganan error yang aman.
+- Perlindungan data pribadi.
+- Pemeriksaan akses setiap operasi sensitif.
+- Log aktivitas administratif.
+- Konfigurasi rahasia hanya di server.
+
+Jangan:
+
+- Menaruh password di source code publik.
+- Menaruh private key dalam frontend.
+- Menaruh service account JSON dalam folder publik.
+- Menggunakan localStorage sebagai sumber otorisasi.
+- Menggunakan database tanpa aturan keamanan.
+- Membuat semua pengguna dapat mengubah role.
+- Membuat semua pesan pribadi dapat dibaca publik.
+- Mengklaim keamanan sudah sempurna tanpa pengujian.
+
+Jangan memasukkan kredensial sungguhan ke kode contoh yang akan dipublikasikan.
+
+Jika membutuhkan Firebase configuration, jelaskan cara memasangnya melalui mekanisme konfigurasi yang sesuai. Ingat bahwa Firebase client configuration bukan pengganti Security Rules.
+
+---
+
+32. PERFORMA DAN AKSESIBILITAS
+
+Optimalkan website agar cepat dan mudah digunakan.
+
+Terapkan:
+
+- Lazy loading gambar.
+- Pagination.
+- Optimasi aset.
+- Pengurangan animasi yang berat.
+- Komponen yang dapat digunakan ulang.
+- Loading skeleton.
+- Empty state.
+- Error state.
+- Desain kontras yang cukup.
+- Label untuk formulir.
+- Navigasi keyboard.
+- Focus state.
+- Teks alternatif untuk gambar.
+- Dukungan reduced motion.
+
+Hindari mengambil seluruh pesan, anggota, dan media sekaligus.
+
+---
+
+33. PENGUJIAN APLIKASI
+
+Sebelum menyatakan aplikasi selesai, periksa fitur-fitur berikut:
+
+1. Registrasi akun.
+2. Login.
+3. Logout.
+4. Reset password.
+5. Hak akses anggota.
+6. Hak akses admin.
+7. Hak akses Super Admin.
+8. Chat global real-time.
+9. Chat pribadi.
+10. Privasi percakapan.
+11. Upload foto.
+12. Upload video.
+13. Galeri.
+14. Pengumuman.
+15. Tugas.
+16. Jadwal.
+17. Kalender.
+18. Polling.
+19. Kotak saran.
+20. Pengaturan tema.
+21. Penggantian logo.
+22. Penggantian background.
+23. Sinkronisasi antardevais.
+24. Tampilan HP.
+25. Tampilan desktop.
+26. Validasi input.
+27. Penanganan error.
+28. Firestore Security Rules.
+29. Storage Security Rules.
+30. Proteksi halaman dan operasi admin.
+
+Jika pengujian gagal, perbaiki penyebabnya sebelum menyatakan fitur tersebut berfungsi.
+
+Jangan mengklaim fitur real-time berfungsi jika baru diuji menggunakan data lokal.
+
+---
+
+34. DEPLOYMENT DAN PUBLIKASI
+
+Siapkan panduan deployment yang jelas.
+
+Jelaskan:
+
+1. Cara membuat proyek Firebase.
+2. Cara mengaktifkan Authentication.
+3. Cara mengatur metode login.
+4. Cara membuat Firestore Database.
+5. Cara mengaktifkan Storage.
+6. Cara memasang konfigurasi aplikasi.
+7. Cara mengatur Security Rules.
+8. Cara menetapkan dua admin utama secara aman.
+9. Cara menjalankan aplikasi secara lokal.
+10. Cara melakukan build.
+11. Cara memublikasikan website.
+12. Cara mendapatkan alamat website.
+13. Cara menguji website dari HP lain.
+14. Cara memperbarui website setelah perubahan.
+
+Jangan mengaku website sudah online sebelum proses deployment benar-benar berhasil.
+
+Jangan mengaku database sudah aktif sebelum berhasil terhubung.
+
+---
+
+35. HASIL AKHIR YANG WAJIB DIBERIKAN
+
+Hasilkan aplikasi yang mencakup:
+
+- Source code lengkap.
+- Struktur folder yang jelas.
+- Komponen frontend.
+- Halaman website.
+- Autentikasi.
+- Integrasi database.
+- Integrasi penyimpanan media.
+- Sistem role.
+- Dashboard admin.
+- Sistem chat.
+- Galeri.
+- Dashboard tugas.
+- Jadwal kelas.
+- Kalender.
+- Pengumuman.
+- Pengaturan tema.
+- Identitas pembuat THOZ — WAKLENG.
+- Identitas wali kelas BUK BIBA.
+- Security Rules.
+- File konfigurasi contoh tanpa rahasia.
+- File README.
+- Petunjuk instalasi.
+- Petunjuk deployment.
+- Daftar pengujian.
+- Daftar fitur yang sudah berfungsi.
+- Daftar fitur yang masih membutuhkan konfigurasi.
+
+Gunakan kode yang benar-benar dapat dijalankan. Jangan memberikan pseudocode untuk fitur inti jika implementasi nyata dapat dibuat.
+
+Jika semua fitur terlalu besar untuk satu tahap, kerjakan dalam beberapa tahap yang terstruktur. Prioritaskan aplikasi inti yang berfungsi, lalu tambahkan fitur berikutnya tanpa merusak fitur sebelumnya.
+
+Jangan menghapus fitur penting hanya demi membuat tampilan terlihat selesai.
+
+---
+
+36. URUTAN PENGERJAAN
+
+Kerjakan dengan urutan berikut.
+
+TAHAP 1 — Fondasi
+
+- Buat struktur aplikasi.
+- Buat desain Galaxy Premium.
+- Buat landing page.
+- Buat navigasi.
+- Buat halaman Tentang Website.
+- Tambahkan identitas THOZ — WAKLENG.
+- Tambahkan kartu wali kelas BUK BIBA.
+- Buat desain responsif.
+
+TAHAP 2 — Backend
+
+- Hubungkan Firebase.
+- Buat autentikasi.
+- Buat database.
+- Buat penyimpanan media.
+- Buat sistem role.
+- Buat Security Rules.
+
+TAHAP 3 — Fitur Kelas
+
+- Dashboard.
+- Anggota.
+- Pengumuman.
+- Chat global.
+- Chat pribadi.
+- Galeri.
+- Kenangan.
+- Tugas.
+- Jadwal.
+- Kalender.
+
+TAHAP 4 — Administrasi
+
+- Dashboard admin.
+- Konfigurasi dua admin utama.
+- Pengelolaan anggota.
+- Pengaturan tema.
+- Pengelolaan logo dan background.
+- Pengelolaan media.
+- Moderasi.
+- Log aktivitas.
+
+TAHAP 5 — Pengujian
+
+- Uji setiap fitur.
+- Uji hak akses.
+- Uji sinkronisasi.
+- Uji keamanan.
+- Uji perangkat mobile.
+- Perbaiki error.
+
+TAHAP 6 — Publikasi
+
+- Siapkan konfigurasi deployment.
+- Buat panduan publikasi.
+- Uji website online dari beberapa perangkat.
+- Dokumentasikan semua konfigurasi yang masih diperlukan.
+
+---
+
+INSTRUKSI PENUTUP
+
+Mulai dengan memeriksa lingkungan pengembangan yang tersedia, lalu implementasikan proyek secara nyata.
+
+Prioritaskan desain premium, fungsi yang benar-benar bekerja, keamanan data, dan kompatibilitas HP.
+
+Nama website harus selalu konsisten sebagai 8F WEB CLASS.
+
+Identitas pembuat harus ditulis THOZ — WAKLENG.
+
+Nama wali kelas harus ditulis BUK BIBA.
+
+Tema default harus GALAXY PREMIUM dengan warna hitam, ungu neon, dan efek bintang.
+
+Jangan menampilkan kredensial rahasia dalam source code.
+
+Jangan menggunakan data palsu seolah-olah berasal dari database sungguhan.
+
+Jika layanan eksternal belum dikonfigurasi, jelaskan langkah yang diperlukan secara jujur.
+
+Sekarang mulai bangun aplikasi 8F WEB CLASS secara bertahap, lengkap, responsif, aman, dan siap diuji serta dipublikasikan.
